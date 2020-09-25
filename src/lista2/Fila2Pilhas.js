@@ -1,3 +1,7 @@
+/**
+ * QUESTÃO 2: Implemente uma fila usando a implementação duas pilhas básicas.
+ */
+
 import Pilha from "../Pilha";
 
 class PilhaFila{

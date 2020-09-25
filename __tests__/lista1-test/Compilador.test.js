@@ -1,5 +1,4 @@
-import verficarSequencia from "../src/Compilador";
-import VerificarSequencia from "../src/Compilador";
+import verficarSequencia from "../../src/lista1/Compilador";
 
 
 test("Verifando sequencias de caracteres", () => {

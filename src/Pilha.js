@@ -35,6 +35,10 @@ class Pilha{
         return this.dados[this.topo];
     }
 
+    clear(){
+        this.topo = -1;
+    }
+
     toString(){
         if(this.isEmpty()){
             return "[]";

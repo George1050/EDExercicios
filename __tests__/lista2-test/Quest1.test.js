@@ -2,7 +2,7 @@ import Filapilha from "../../src/lista2/FilaPilha";
 
 let f;
 
-test("enqueue, dequeue and others", () =>{
+test("push, pop and others", () =>{
     f = new Filapilha(10);
     f.push(1);
     f.push(2);

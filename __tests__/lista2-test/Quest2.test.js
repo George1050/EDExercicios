@@ -2,7 +2,7 @@ import PilhaFila from "../../src/lista2/PilhaFila";
 
 let p;
 
-test("push, pop and others", () => {
+test("enqueue, dequeue and others", () => {
     p = new PilhaFila(10);
     p.enqueue(1);
     p.enqueue(2);

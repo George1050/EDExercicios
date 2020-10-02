@@ -5,7 +5,7 @@
 
 import Lista from "../Lista";
 
-class InverterLista{
+export default class InverterLista{
 
     inverter(list){
         let aux = new Lista();
@@ -16,5 +16,3 @@ class InverterLista{
         list.head.proximo = aux.head.proximo;
     }
 }
-
-export default InverterLista;

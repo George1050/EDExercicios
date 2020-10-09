@@ -131,7 +131,24 @@ class Lista{
 				novo_no.proximo = aux_b;
 			}
 		}
-	}
+    }
+    
+    searchAt(posicao){
+        if (this.isEmpty()) {
+			return null;
+		} else {
+            let tmp = this.head.proximo;
+            let i = 0;
+			while (tmp !== null) {
+				if (i === posicao) {
+					return tmp.dado;
+				}
+				//iteração
+                tmp = tmp.proximo;
+            }
+            return null;
+		}
+    }
 
     search(dado) {
 		if (this.isEmpty()) {

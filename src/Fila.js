@@ -44,6 +44,19 @@ class Fila{
     clear(){
         this.inicio = this.fim; 
     }
+
+    toString(){
+        if(this.isEmpty()){
+            return "[]";
+        }else{
+            let temp = "[ ";
+            for(let i = this.inicio; i < this.fim; i++){
+                temp += this.dado[i]+" ";
+            }
+            temp+="]";
+            return temp;
+        }
+    }
 }
 
 export default Fila;

@@ -56,13 +56,16 @@ class Lista{
     removeEnd(){
         let temp_a = this.head;
         let temp_b = this.head.proximo;
+        if(temp_b.proximo === null){
+            return this.removeBeginning();
+        }
 
         while(temp_b.proximo !== null){
             temp_a = temp_b;
             temp_b = temp_b.proximo;
         }
         temp_a.proximo = null;
-        return temp_a.dado;
+        return temp_b.dado;
     }
 
     size(){
